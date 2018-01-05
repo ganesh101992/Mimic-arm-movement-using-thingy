@@ -1,0 +1,7 @@
+<launch>
+	<param name="jsonFileName" value="$(find robot_controllers)/src/motions.json"/>
+        <param name="lockFileName" value="$(find robot_controllers)/src/reading.txt"/>
+
+	<node name="arm_controller" pkg="robot_controllers" type="arm_controller" output="screen">
+	</node>
+</launch>
